@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', '1.3.13'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -37,9 +39,10 @@ gem 'font-awesome-sass', '4.6.2'
 # Use Hirb gem for better console data presentation
 gem 'hirb', '0.7.3'
 
+gem 'sassc'
+
 group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '1.3.13'
+  
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
@@ -55,3 +58,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+ruby "2.6.3"
