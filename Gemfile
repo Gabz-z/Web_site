@@ -39,6 +39,9 @@ gem 'hirb', '0.7.3'
 
 gem 'sassc'
 
+#Use Devise for user authentication
+gem 'devise', '4.8.1'
+
 group :development, :test do
   gem 'sqlite3','1.3.13'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
