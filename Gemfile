@@ -48,6 +48,9 @@ gem 'paystack'
 # Use Figaro for ENV variables
 gem 'figaro'
 
+#Use Stripe for payment processing
+gem 'stripe'
+
 group :development, :test do
   gem 'sqlite3','1.3.13'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
